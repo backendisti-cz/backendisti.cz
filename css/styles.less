@@ -1,0 +1,242 @@
+@grey: #393738;
+
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+body {
+    text-align: center;
+    font-family: 'proxima-nova', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: @grey;
+}
+
+.btn {
+    border: none;
+    background-color: #ffde00;
+    color: #3c3400;
+    padding: 16px 35px;
+    display: inline-block;
+}
+
+.input {
+    padding: 14px 15px;
+    border: 2px solid #d1d5e5;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 27px;
+}
+
+h2 {
+    font-size: 27px;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+a {
+    text-decoration: none;
+    border-bottom: 1px solid;
+    &:hover {
+        border: none;
+    }
+}
+
+hr {
+    max-width: 715px;
+    margin: 50px auto;
+}
+
+a.logo, a.icon {
+    border-bottom: none;
+}
+
+.meetup-info {
+    span {
+        display: inline-block;
+        vertical-align: middle;
+        &.headline {
+            font-size: 20px;
+            font-weight: 600;
+            margin-right: 20px;
+        }
+        &.date, &.time, &.place {
+            margin: 0 35px;
+            margin-bottom: 10px;
+        }
+        &.date:before, &.time:before, &.place:before {
+            content: "";
+            width: 46px;
+            height: 31px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            margin-left: -45px;
+            margin-top: -3px;
+        }
+        &.date:before {
+            background-image: url("../img/date-grey.png");
+        }
+        &.time:before {
+            background-image: url("../img/time-grey.png");
+        }
+        &.place:before {
+            background-image: url("../img/place-grey.png");
+            margin-top: 10px;
+        }
+    }
+}
+
+#meetup-promo {
+    background-color: #eff6bf;
+    border-top: 2px solid #d3e07d;
+    border-bottom: 2px solid #d3e07d;
+    padding: 40px 0;
+    .meetup-info span {
+        &.date:before {
+            background-image: url("../img/date-green.png");
+        }
+        &.time:before {
+            background-image: url("../img/time-green.png");
+        }
+        &.place:before {
+            background-image: url("../img/place-green.png");
+        }
+    }
+}
+
+#meetup, #contact {
+    background-color: #eff2fa;
+}
+
+footer {
+    background-color: #87869d;
+    color: #fff;
+    a {
+        color: #fff;
+    }
+    .container {
+        padding-bottom: 100px;
+    }
+}
+
+section, footer {
+    padding: 70px 10px;
+}
+
+#topics {
+    .items {
+        span {
+            display: inline-block;
+            background-color: #eff2fa;
+            color: #737286;
+            padding: 7px 15px;
+            margin: 7px 7px;
+            border-radius: 4px;
+        }
+    }
+}
+
+header {
+    padding: 60px 10px;
+    .top {
+        a.logo {
+            display: block;
+            float: left;
+            img {
+                max-width: 100%;
+            }
+        }
+        nav {
+            float: right;
+            a {
+                color: @grey;
+                font-size: 16px;
+                display: inline-block;
+                margin-left: 25px;
+            }
+        }
+    }
+    .icon {
+        margin-top: 90px;
+        margin-bottom: 55px;
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+#contact {
+    .people {
+        .item {
+            display: inline-block;
+            margin: 0 30px 35px 30px;
+            img {
+                border-radius: 100px;
+                margin-bottom: 6px;
+            }
+            .name {
+                font-weight: 600;
+            }
+            .name, .info {
+                display: block;
+            }
+        }
+    }
+    .companies {
+        margin-top: 35px;
+    }
+}
+
+#meetup {
+    .cta {
+        font-weight: 600;
+        font-size: 22px;
+        padding: 16px 40px;
+        margin-bottom: 30px;
+    }
+    .talk {
+        text-align: left;
+        max-width: 560px;
+        margin: auto;
+        margin-bottom: 40px;
+        font-size: 16px;
+        .time {
+            float: left;
+            margin-right: 30px;
+            margin-bottom: 15px;
+            span {
+                border: 2px solid #d1d5e5;
+                padding: 9px 12px;
+                border-radius: 4px;
+                display: inline-block;
+                margin-top: 2px;
+            }
+        }
+        .info {
+            max-width: 440px;
+            float: left;
+            img {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+#subscribe {
+    input[type="email"] {
+        width: 230px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    p {
+        color: #87869d;
+    }
+}
