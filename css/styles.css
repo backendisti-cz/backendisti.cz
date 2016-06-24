@@ -203,6 +203,9 @@ header .icon img {
 #meetup .talk .info img {
   margin-top: 10px;
 }
+#meetup .talk iframe {
+  margin-top: 20px;
+}
 #subscribe input[type="email"] {
   width: 230px;
   margin-right: 5px;
