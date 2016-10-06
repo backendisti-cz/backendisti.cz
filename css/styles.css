@@ -64,6 +64,9 @@ a.icon {
   margin: 0 35px;
   margin-bottom: 10px;
 }
+.meetup-info span.place {
+  text-align: left;
+}
 .meetup-info span.date:before,
 .meetup-info span.time:before,
 .meetup-info span.place:before {
@@ -205,6 +208,9 @@ header .icon img {
 }
 #meetup .talk iframe {
   margin-top: 20px;
+}
+#meetup .previous-meetups {
+  display: none;
 }
 #subscribe input[type="email"] {
   width: 230px;
