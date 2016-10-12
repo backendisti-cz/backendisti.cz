@@ -37,6 +37,7 @@ h2 {
 a {
   text-decoration: none;
   border-bottom: 1px solid;
+  color: #393738;
 }
 a:hover {
   border: none;
@@ -191,6 +192,7 @@ header .icon img {
   float: left;
   margin-right: 30px;
   margin-bottom: 15px;
+  width: 80px;
 }
 #meetup .talk .time span {
   border: 2px solid #d1d5e5;
