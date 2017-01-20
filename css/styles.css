@@ -88,7 +88,7 @@ a.icon {
 }
 .meetup-info span.place:before {
   background-image: url("../img/place-grey.png");
-  margin-top: 40px;
+  margin-top: 25px;
 }
 #meetup-promo {
   background-color: #eff6bf;
