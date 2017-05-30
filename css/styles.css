@@ -222,3 +222,6 @@ header .icon img {
 #subscribe p {
   color: #87869d;
 }
+.noborder {
+  border: 0 !important;
+}
