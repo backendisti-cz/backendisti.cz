@@ -32,7 +32,7 @@ And each one will have a suffix `_1` because there is just one container running
 ```
 user@example:~/twisto/backendisti.cz/$ docker ps
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                      NAMES
-94b0320241fa        nginx:alpine        "nginx -g 'daemon ..."   4 days ago          Up 1 second         127.0.0.1:5080->80/tcp     backendisti.cz_web_1
+94b0320241fa        nginx:alpine        "nginx -g 'daemon ..."   4 days ago          Up 1 second         127.0.0.1:5080->80/tcp     backendisticz_web_1
 ```
 
 Restart [docker-compose] then:
