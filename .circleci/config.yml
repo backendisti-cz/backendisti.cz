@@ -1,0 +1,48 @@
+# backendisti.cz CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-python/ for more details
+#
+version: 2
+
+# This section is not processed by Circle CI. It is just a set of marcos
+# that gets replaced thanks to YAML syntax features. It allows to keep CI
+# definition DRY.
+aliases:
+    -   &ssh_keys
+        add_ssh_keys:
+            fingerprints:
+                - "ed:1e:6d:df:45:d2:fc:72:3b:a8:58:fa:5a:ab:c6:01"
+
+    -   &deploy_image
+        docker:
+            -   image: registry.gitlab.com/tomaskadlec/container-ansible-ci:alpine_3.7-ansible_2.4
+
+    -   &deploy
+        run:
+            name: deploy static website
+            command: |
+                echo -e "Host *\n\tStrictHostKeyChecking no\n\n" >> ~/.ssh/config
+                export ANSIBLE_CONFIG=.ansible/ansible.cfg
+                ansible-playbook --inventory-file .ansible/hosts.yml -t "$DEPLOY_TAG" .ansible/deploy.yml
+
+jobs:
+
+    deploy-backendisti-cz:
+        working_directory: ~/repo
+        <<: *deploy_image
+        environment:
+            DEPLOY_TAG: backendisti.cz
+        steps:
+            -   checkout
+            -   *ssh_keys
+            -   *deploy
+
+workflows:
+    version: 2
+
+    deploy:
+        jobs:
+            -   deploy-backendisti-cz:
+                    filters:
+                        branches:
+                            only: master
