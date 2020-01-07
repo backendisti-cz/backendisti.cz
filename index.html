@@ -60,9 +60,9 @@
             <div class="container">
                 <div class="meetup-info clearfix">
                     <span class="headline">Následující sraz:</span>
-                    <span class="date">23.&nbsp;ledna 2019</span>
+                    <span class="date">16.&nbsp;ledna 2020</span>
                     <span class="time">od 18:00</span>
-                    <span class="place">Socialbakers<br>Pernerova 676/53<br>186 00 Praha 8 – Karlín</span>
+                    <span class="place">JetBrains, Kavčí Hory Office Park<br>Na hřebenech II 1718/10 <br>140 00 Praha 4 - Nusle</span>
                     <span class="cta"><a href="#meetup" class="btn">Více informací</a></span>
                 </div>
             </div>
@@ -99,15 +99,17 @@
         <section id="meetup">
             <div class="container">
 
-                <h2>Backendisti #10</h2>
+                <h2>Backendisti #11 [en]</h2>
 
 
                 <div class="meetup-info">
-                    <span class="date">23.&nbsp;ledna 2019</span>
-                    <span class="time">od 18:00</span>
-                    <span class="place">Socialbakers<br>Pernerova 676/53<br>186 00 Praha 8 – Karlín</span>
+                    <span class="date">16.&nbsp;January 2020</span>
+                    <span class="time">18:00 - ?</span>
+                    <span class="place">JetBrains, Kavčí Hory Office Park<br>Na hřebenech II 1718/10 <br>140 00 Praha 4 - Nusle</span>
                 </div>
 
+                <hr>
+                <h3>This event will be entirely in English</h3>
                 <hr>
 
                 <div class="talk clearfix">
@@ -115,23 +117,43 @@
                         <span>10 min</span>
                     </div>
                     <div class="info">
-                        <strong>Backendisti #10 – Intro</strong>
+                        <strong>Backendisti #11 – Intro</strong>
                     </div>
                 </div>
 
                 <div class="talk clearfix">
                     <div class="time">
-                        <span>50 min</span>
+                        <span>40 min</span>
                     </div>
                     <div class="info">
-                        <strong>How we processed millions of designs in 2018</strong>
+                        <strong>Simplifying complex code using Domain-Driven Design</strong>
                         <br>
-                        With Avocode, our users are able to inspect design files without the actual design software like Photoshop. This required creating an infrastructure that is able to parse and render all the formats as fast and reliable as possible. This talk will be a short overview of our backend infrastructure and how we leveraged technologies like Kubernetes and Helm, Django, Emscripten and Grafana.
+                        This will be a practical presentation about how to use DDD to improve large codebases solving complex business problems. The purpose and basic concepts of DDD will be explained at first. Then we will move on to examples of how we applied those concepts to our existing TypeScript services at Pipedrive.
                         <br>
-                        <a href="https://www.linkedin.com/in/rychlis/" target="_blank">Tomáš Rychlik</a>
+                        <a href="https://www.linkedin.com/in/jkadlubiec/" target="_blank">Jakub Kadlubiec</a>
                         <br>
-                        <a href="https://www.avocode.com/" target="_blank" class="noborder">
-                            <img src="img/speakers/avocode.svg" alt="Avocode logo" width="200">
+                        <a href="https://www.pipedrive.com/" target="_blank" class="noborder">
+                            <img src="img/speakers/pipedrive.svg" alt="Pipedrive logo" width="200">
+                        </a>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="talk clearfix">
+                    <div class="time">
+                        <span>40 min</span>
+                    </div>
+                    <div class="info">
+                        <strong>Programming hardware: from zero to custom PCBs</strong>
+                        <br>
+                        In today’s world, we’re used to testing our code almost instantly, sometimes even after writing just one line of code. Developing and programming hardware is still different in this perspective because, in most cases, you have to compile and flash the code before execution. Strangely enough, it brings significant relief to the whole development process because it forces you to pause for a while and think.
+                        <br>
+                        I started playing with IoT projects a few years ago without any knowledge about hardware, and mostly through experimenting, I was able to learn how to design custom projects, including printed circuit boards. By utilizing a self-made reflow oven and 3D printed enclosures, I can make the projects look (almost) like factory-made and even produce them in batch. Have you ever wondered how to automate existing appliances at the office or home? Easy! In this talk, I’d like to show you how you can start yourself and what challenges you’d most likely encounter during the learning process.
+                        <br>
+                        <a href="https://www.linkedin.com/in/viktorstiskala/" target="_blank">Viktor Stískala</a>
+                        <br>
+                        <a href="https://www.twisto.cz/" target="_blank" class="noborder">
+                            <img src="img/logo-twisto.svg" alt="Twisto logo" width="200">
                         </a>
                         <br>
                     </div>
@@ -142,44 +164,18 @@
                         <span>30 min</span>
                     </div>
                     <div class="info">
-                        <strong> Let your open-source projects live in the cloud</strong>
-                        <br>
-                        In this talk, I will show how you can give your open-source projects a live presence in the cloud using Apify Actors - a new serverless computing platform for jobs that are longer than a lifetime of a single HTTP transaction. Once you build and publish an actor, anyone can start using it straight away without a need to install or setup anything on their own infrastructure. And you don’t need to pay a penny for the cloud hosting.
-                        <br>
-                        <a href="https://apify.com/jancurn" target="_blank">Jan Čurn</a>
-                        <br>
-                        <a href="https://www.apify.com/" target="_blank" class="noborder">
-                            <img src="img/speakers/apify.svg" alt="Apify logo" width="200">
-                        </a>
-                        <br>
+                        <strong>To be announced</strong>
                     </div>
                 </div>
 
                 <div class="talk clearfix">
                     <div class="time">
-                        <span>30 min</span>
-                    </div>
-                    <div class="info">
-                        <strong>Mesos in production</strong>
-                        <br>
-                        In Socialbakers we use Mesos and its ecosystem (Marathon, Singularity, MLB) to run and manage our microservices architecture — which now consists of approx. 400 apps in total of 1000 instances (processes). You will get insight into our setup of the cluster, tips and ways we had to reveal ourselves to have smooth production environment. Also, I will share some of the fuckups that happened to us when using this software.
-                        <br>
-                        <a href="https://www.linkedin.com/in/bydga/" target="_blank">Martin Bydžovský</a>
-                        <br>
-                        <a href="https://www.socialbakers.com/" class="noborder" target="_blank">
-                            <img src="img/speakers/socialbakers.svg" alt="Socialbakers logo" width="200">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="talk clearfix">
-                    <div class="time">
-                        <span>2 hod</span>
+                        <span>2 hrs</span>
                     </div>
                     <div class="info">
                         <strong>Networking</strong>
                         <br>
-                        V průběhu celé akce a hlavně po ní se můžete občerstvovat točeným pivem, nealkem a jídlem, které pro vás obstarali Socialbakers. &#x1F609;
+                        During the whole event and especially after it you can refresh yourself with draft beer, soft drinks and food provided by JetBrains.
                     </div>
                 </div>
 
@@ -191,6 +187,89 @@
                 <hr>
 
                 <div class="previous-meetups">
+                    <h2>Backendisti #10</h2>
+
+                    <div class="meetup-info">
+                        <span class="date">23.&nbsp;ledna 2019</span>
+                        <span class="time">od 18:00</span>
+                        <span class="place">Socialbakers<br>Pernerova 676/53<br>186 00 Praha 8 – Karlín</span>
+                    </div>
+
+                    <hr>
+
+                    <div class="talk clearfix">
+                        <div class="time">
+                            <span>10 min</span>
+                        </div>
+                        <div class="info">
+                            <strong>Backendisti #10 – Intro</strong>
+                        </div>
+                    </div>
+
+                    <div class="talk clearfix">
+                        <div class="time">
+                            <span>50 min</span>
+                        </div>
+                        <div class="info">
+                            <strong>How we processed millions of designs in 2018</strong>
+                            <br>
+                            With Avocode, our users are able to inspect design files without the actual design software like Photoshop. This required creating an infrastructure that is able to parse and render all the formats as fast and reliable as possible. This talk will be a short overview of our backend infrastructure and how we leveraged technologies like Kubernetes and Helm, Django, Emscripten and Grafana.
+                            <br>
+                            <a href="https://www.linkedin.com/in/rychlis/" target="_blank">Tomáš Rychlik</a>
+                            <br>
+                            <a href="https://www.avocode.com/" target="_blank" class="noborder">
+                                <img src="img/speakers/avocode.svg" alt="Avocode logo" width="200">
+                            </a>
+                            <br>
+                        </div>
+                    </div>
+
+                    <div class="talk clearfix">
+                        <div class="time">
+                            <span>30 min</span>
+                        </div>
+                        <div class="info">
+                            <strong> Let your open-source projects live in the cloud</strong>
+                            <br>
+                            In this talk, I will show how you can give your open-source projects a live presence in the cloud using Apify Actors - a new serverless computing platform for jobs that are longer than a lifetime of a single HTTP transaction. Once you build and publish an actor, anyone can start using it straight away without a need to install or setup anything on their own infrastructure. And you don’t need to pay a penny for the cloud hosting.
+                            <br>
+                            <a href="https://apify.com/jancurn" target="_blank">Jan Čurn</a>
+                            <br>
+                            <a href="https://www.apify.com/" target="_blank" class="noborder">
+                                <img src="img/speakers/apify.svg" alt="Apify logo" width="200">
+                            </a>
+                            <br>
+                        </div>
+                    </div>
+
+                    <div class="talk clearfix">
+                        <div class="time">
+                            <span>30 min</span>
+                        </div>
+                        <div class="info">
+                            <strong>Mesos in production</strong>
+                            <br>
+                            In Socialbakers we use Mesos and its ecosystem (Marathon, Singularity, MLB) to run and manage our microservices architecture — which now consists of approx. 400 apps in total of 1000 instances (processes). You will get insight into our setup of the cluster, tips and ways we had to reveal ourselves to have smooth production environment. Also, I will share some of the fuckups that happened to us when using this software.
+                            <br>
+                            <a href="https://www.linkedin.com/in/bydga/" target="_blank">Martin Bydžovský</a>
+                            <br>
+                            <a href="https://www.socialbakers.com/" class="noborder" target="_blank">
+                                <img src="img/speakers/socialbakers.svg" alt="Socialbakers logo" width="200">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="talk clearfix">
+                        <div class="time">
+                            <span>2 hod</span>
+                        </div>
+                        <div class="info">
+                            <strong>Networking</strong>
+                            <br>
+                            V průběhu celé akce a hlavně po ní se můžete občerstvovat točeným pivem, nealkem a jídlem, které pro vás obstarali Socialbakers. &#x1F609;
+                        </div>
+                    </div>
+
                     <h2>Backendisti #9</h2>
 
                     <div class="meetup-info">
