@@ -7,4 +7,4 @@ services:
             - "127.0.0.1:5080:80"
         volumes:
             - ".docker/nginx-static.conf:/etc/nginx/conf.d/default.conf"
-            - ".:/var/www/app"
+            - "./web:/var/www/app"
