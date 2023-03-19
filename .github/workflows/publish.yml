@@ -20,5 +20,5 @@ jobs:
           accountId: f23d3bdabedf584dc8bd8fb94b41190e
           projectName: backendisti
           directory: web
-          # Optional: Enable this if you want to have GitHub Deployments triggered
+          branch: ${{ github.ref_name == 'master' && 'main' || github.ref_name }}
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
