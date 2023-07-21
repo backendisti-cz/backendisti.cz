@@ -2,11 +2,19 @@ $(function () {
     $('#previous-meetups-cta').on('click', function (e) {
         e.preventDefault();
 
-        $('.previous-meetups').slideToggle();
+        // TODO: show loading?
+
+        $.ajax({
+            url: 'past.html',
+            type: 'GET',
+            success: function(response) {
+                $('.previous-meetups').html(response);
+                $('.previous-meetups').slideToggle();
+            },
+            error: function(xhr, status, error) {
+                console.error("Error: " + error);
+            }
+        });
     });
-    $('.previous-meetups-header').on('click', function (e) {
-        e.preventDefault();
-        $('.previous-meetups').show();
-        $('body').scrollTop($('#previous').offset().top);
-    });
+
 });
