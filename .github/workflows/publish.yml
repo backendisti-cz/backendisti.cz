@@ -22,3 +22,14 @@ jobs:
           directory: web
           branch: ${{ github.ref_name == 'master' && 'main' || github.ref_name }}
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Purge cache
+        env:
+          zone_id: "4604dc5827876a558829b184668da310"
+          api_token: "${{ secrets.CLOUDFLARE_API_TOKEN }}"
+        run: |
+          curl -fsX POST \
+          -H 'Authorization: Bearer ${{ env.api_token }}' \
+          -H 'Content-Type: application/json' \
+          --data '{"purge_everything": true}' \
+          https://api.cloudflare.com/client/v4/zones/${{ env.zone_id }}/purge_cache
